@@ -28,27 +28,28 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
-        formRef.current,
-        "pX_2hasGmGcuvjXIW"
-      )
-      .then(
-        (result) => {
-          setSuccess(true)
-        },
-        (error) => {
-          setError(true);
-        }
-      );
+    window.alert("Outgoing email functionality is not available in the demo.")
+    // emailjs
+    //   .sendForm(
+    //     "service_94y20xo",
+    //     "template_v10u2oh",
+    //     formRef.current,
+    //     "pX_2hasGmGcuvjXIW"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       setSuccess(true)
+    //     },
+    //     (error) => {
+    //       setError(true);
+    //     }
+    //   );
   };
 
   return (
     <motion.div
       ref={ref}
+      id="Contact"
       className="contact"
       variants={variants}
       initial="initial"
@@ -58,15 +59,15 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <span>hello@mail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span>Hello street New York</span>
+          <span>Washington DC</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span>+1 234 5678</span>
+          <span>+1 (555) 867-5309</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
