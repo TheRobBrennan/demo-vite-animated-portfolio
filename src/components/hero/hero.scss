@@ -43,6 +43,7 @@
       }
 
       .buttons {
+        z-index: 5;
         button {
           padding: 20px;
           border: 1px solid white;
@@ -89,5 +90,6 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+    z-index: 1;
   }
 }

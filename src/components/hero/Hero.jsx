@@ -52,10 +52,14 @@ const Hero = () => {
             Web developer and UI designer
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
+            <motion.button variants={textVariants} onClick={e => {
+              document.getElementById('Portfolio').scrollIntoView({ behavior: 'smooth' });
+            }}>
               See the Latest Works
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button variants={textVariants} onClick={e => {
+              document.getElementById('Contact').scrollIntoView({ behavior: 'smooth' });
+            }}>Contact Me</motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
