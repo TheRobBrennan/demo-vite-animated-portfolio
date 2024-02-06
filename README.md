@@ -14,9 +14,16 @@ If you are spinning up the project for the first time, please run the `npm insta
 
 # Start our development server
 % npm run dev
+
+  VITE v4.4.5  ready in 314 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h to show help
+
 ```
 
-In the above example, we should be able to open our favorite web browser and navigate to []() 🎉
+In the above example, we should be able to open our favorite web browser and navigate to [http://localhost:5173](http://localhost:5173) 🎉
 
 Once we've verified our local development environment is up and running, it's time to do an initial deployment to Vercel:
 
